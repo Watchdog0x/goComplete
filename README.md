@@ -12,28 +12,22 @@ This repository contains a Bash completion script for the Go programming languag
 
 ## Installation
 
-1. Clone this repository or download the script file:
+1. Using curl
    ```bash
-   git clone https://github.com/Watchdog0x/goComplete.git && cd goComplete && chmod +x go-completion.sh
+   curl -o- https://raw.githubusercontent.com/Watchdog0x/goComplete/main/install.sh | sudo bash
    ```
 
-2. Add the script to your `bash_completion`:
+2. Using wget:
    ```bash
-   if [ -d "/usr/share/bash-completion/completions" ]; then
-       sudo ln -rfs go-completion.sh /usr/share/bash-completion/completions/go
-   else
-       sudo ln -rfs go-completion.sh /etc/bash_completion.d/
-   fi
+   wget -qO- https://raw.githubusercontent.com/Watchdog0x/goComplete/main/install.sh | sudo bash
    ```
-
-3. Restart your terminal or run `source ~/.bashrc` to apply the changes.
 
 ## Usage
 
 Once installed, you can start using the Go completion script immediately. Simply start typing a Go command and press Tab to see available completions. For example:
 
 ```bash
-go b<Tab>           # Completes to: go build
+go bu<Tab>           # Completes to: go build
 go run -<Tab>       # Shows available flags for 'go run'
 go mod i<Tab>       # Completes to: go mod init
 ```
