@@ -66,5 +66,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- The Go team for creating such an amazing language and toolset
+- The Go team for creating such an amazing language and toolset: 
+[cmd go doc](https://pkg.go.dev/cmd/go) |
+[tools doc](https://pkg.go.dev/cmd)
 - The Bash completion community for their excellent documentation and examples
