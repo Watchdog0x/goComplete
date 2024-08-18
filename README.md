@@ -14,7 +14,7 @@ This repository contains a Bash completion script for the Go programming languag
 
 1. Clone this repository or download the script file:
    ```bash
-   git clone https://github.com/Watchdog0x/goComplete.git && cd goComplete && chmod +x go-completion.sh
+   git clone https://github.com/Watchdog0x/goComplete.git && cd goComplete && sudo chmod +x go-completion.sh
    ```
 
 2. Add the script to your `bash_completion`:
