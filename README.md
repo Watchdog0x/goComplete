@@ -14,7 +14,7 @@ This repository contains a Bash completion script for the Go programming languag
 
 #### 1. Using curl
    ```bash
-   curl -o- https://raw.githubusercontent.com/Watchdog0x/goComplete/main/install.sh | sudo bash
+   curl -so- https://raw.githubusercontent.com/Watchdog0x/goComplete/main/install.sh | sudo bash
    ```
 
 #### 2. Using wget
