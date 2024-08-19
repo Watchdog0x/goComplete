@@ -84,7 +84,7 @@ installing() {
 }
 
 main() { 
-    spinner "Go Bash Completion" installing
+    spinner "Installing Go Bash Completion" installing
 
     printf "\nInstallation completed successfully!\n"
 }
