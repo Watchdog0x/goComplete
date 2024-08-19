@@ -59,12 +59,9 @@ spinner() {
 
 trap 'tput cnorm' EXIT
 
-
-
 installing() {
     local completion_content
     local output_dir
-    local source_file
 
     if command -v curl &>/dev/null; then
         completion_content=$(curl -s https://raw.githubusercontent.com/Watchdog0x/goComplete/main/go-completion.sh)
@@ -74,23 +71,19 @@ installing() {
 
     if [ -d "/usr/share/bash-completion/completions" ]; then
         output_dir="/usr/share/bash-completion/completions"
-        source_file="/usr/share/bash-completion/completions/go"
     else
         output_dir="/etc/bash_completion.d"
-        source_file="$HOME/.bashrc"
     fi
 
     echo "$completion_content" > "$output_dir/go"
     chmod +x "$output_dir/go"
-
-    eval "source $source_file"
    
 }
 
 main() { 
     spinner "Installing Go Bash Completion" installing
 
-    printf "\nInstallation completed successfully!\n"
+    printf "\nInstallation completed successfully!\nOpen a new terminal\n"
 }
 
 main
